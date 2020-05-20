@@ -1,4 +1,13 @@
 # alibabacloud-console-os
+=========
+
+[![build status][travis-image]][travis-url]
+[![Test coverage][codecov-image]][codecov-url]
+
+[travis-image]: https://img.shields.io/travis/royIdoodle/alibabacloud-console-os.svg?style=flat-square
+[travis-url]: https://travis-ci.org/royIdoodle/alibabacloud-console-os
+[codecov-image]: https://codecov.io/gh/royIdoodle/alibabacloud-console-os/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/royIdoodle/alibabacloud-console-os
 
 ## 介绍
 ```console-os``` 是在阿里云控制台体系中孵化🐣的微前端方案， 定位是面向企业级的微前端体系化解决方案。
