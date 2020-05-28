@@ -1,13 +1,10 @@
+---
+name: intro
+zhName: 概览
+sort: 0
+---
+
 # alibabacloud-console-os
-=========
-
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-
-[travis-image]: https://img.shields.io/travis/royIdoodle/alibabacloud-console-os.svg?style=flat-square
-[travis-url]: https://travis-ci.org/royIdoodle/alibabacloud-console-os
-[codecov-image]: https://codecov.io/gh/royIdoodle/alibabacloud-console-os/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/royIdoodle/alibabacloud-console-os
 
 ## 介绍
 ```console-os``` 是在阿里云控制台体系中孵化🐣的微前端方案， 定位是面向企业级的微前端体系化解决方案。
@@ -41,7 +38,7 @@ export default mount(
 ```javascript
 import Application from '@alicloud/console-os-react-app'
 
-const appConfigUrl = 'https://dev.g.alicdn.com/aliyun-next/endpoint/0.1.0/aliyun-console-slb.manifest.json';
+const appConfigUrl = 'http://localhost:7100/aliyun-console-slb.manifest.json';
 
 const Home =  () => (
   <Application
@@ -70,16 +67,11 @@ see [Console OS Vue Portal](https://github.com/aliyun/alibabacloud-console-os/bl
 git clone https://github.com/aliyun/alibabacloud-console-os.git
 ```
 
-安装子应用
-
-```bash
-$ npm run install:example
-```
-
 运行 React 子应用
 
 ```bash
 $ cd example/SubApp/React
+$ yarn install # or npm install
 $ npm run start
 # you will visit app on http://localhost:8080/
 ```
@@ -88,6 +80,7 @@ $ npm run start
 
 ```bash
 $ cd example/SubApp/Vue
+$ yarn install # or npm install
 $ npm run serve
 # you will visit app on http://localhost:8081/
 ```
@@ -96,6 +89,7 @@ $ npm run serve
 
 ```bash
 $ cd example/HostApp/ReactHost
+$ yarn install # or npm install
 $ npm run start
 # you will visit app on http://localhost:3000/
 ```
